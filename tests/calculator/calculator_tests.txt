@@ -1,0 +1,8 @@
+Running calculator_tests
+TEST(calculator_test_group, division_test) - 0 ms
+TEST(calculator_test_group, multiplication_test) - 0 ms
+TEST(calculator_test_group, subtracting_test) - 0 ms
+TEST(calculator_test_group, adding_test) - 0 ms
+
+OK (4 tests, 4 ran, 4 checks, 0 ignored, 0 filtered out, 0 ms)
+

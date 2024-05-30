@@ -1,0 +1,18 @@
+name: Unit tests calculator
+
+on: [push]
+
+jobs:
+  docker-unit-tests:
+    runs-on: ubuntu-latest
+    name: build and run calculator unit tests
+    steps:
+
+      - name: Check out this repo
+        uses: actions/checkout@v3
+
+      - name: Build Dcoker image
+        run: docker build -t calculator-ut-image -f Dockerfile .
+
+      - name: Run image
+        run: docker run --rm calculator-ut-image
